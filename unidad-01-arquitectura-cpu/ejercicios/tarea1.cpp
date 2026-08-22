@@ -15,6 +15,7 @@ int main(){
         a=b;
         b=c;
     }
+    cout<<endl;
     system("pause");
     return 0;
 }
