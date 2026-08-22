@@ -15,5 +15,6 @@ int main(){
         a=b;
         b=c;
     }
+    system("pause");
     return 0;
 }
