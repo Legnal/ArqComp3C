@@ -1,0 +1,5 @@
+PUSH (en archivo como pushq)
+MOV (en archivo como movq, movl)
+ADD (en archivo como addl)
+SUB (en archivo como subq)
+CALL (en tu archivo como call)
