@@ -14,11 +14,11 @@ int main(void) {
     DDRD &= ~(1 << DDD2);
     PORTD |= (1 << PORTD2);
     // MODO 1: Nivel Bajo (Low Level)
-     EICRA &= ~((1 << ISC01) | (1 << ISC00));
+    //EICRA &= ~((1 << ISC01) | (1 << ISC00));
 
     // MODO 2: Cualquier Cambio Lógico (Any Logical Change)
-    //EICRA |= (1 << ISC00);
-    //EICRA &= ~(1 << ISC01);
+    EICRA |= (1 << ISC00);
+    EICRA &= ~(1 << ISC01);
 
     // MODO 3: Flanco de Bajada (Falling Edge) - [Al presionar]
     // EICRA = (1 << ISC01);
